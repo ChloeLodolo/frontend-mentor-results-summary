@@ -1,0 +1,99 @@
+:root {
+	box-sizing: border-box;
+    --white: hsl(0, 0%, 100%);
+    --light-red: hsl(0, 100%, 67%);
+    --light-red-background: hsla(0, 100%, 67%, 0.1);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --orangey-yellow-background: hsla(39, 100%, 56%, 0.1);
+    --green-teal: hsl(166, 100%, 37%);
+    --green-teal-background: hsla(166, 100%, 37%, 0.1);
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --violet-blue-background: hsla(256, 72%, 46%, 0.1);
+
+    --pale-blue: hsl(221, 100%, 96%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+    font-size: 18px;
+}
+
+*, ::before, ::after {
+	box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.category-name {
+    display: flex;
+    align-items: center;
+}
+
+.category-icon {
+    margin-right: 0.5em;
+}
+
+.reaction {
+    background-color: var(--light-red-background);
+    color: var(--light-red);
+}
+
+.memory {
+    background-color: var(--orangey-yellow-background);
+    color: var(--orangey-yellow);
+}
+
+.verbal {
+    background-color: var(--green-teal-background);
+    color: var(--green-teal);
+}
+
+.visual {
+    background-color: var(--violet-blue-background);
+    color: var(--violet-blue);
+}
+
+.category-score {
+    font-weight: 700;
+}
+
+.score-value {
+    color: var(--dark-gray-blue);
+}
+
+.score-total {
+    color: lightslategray;
+}
